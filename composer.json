@@ -1,0 +1,29 @@
+{
+    "name": "spiffy/spiffy-view-twig",
+    "authors": [
+        {
+            "name": "Kyle Spraggs",
+            "email": "theman@spiffyjr.me"
+        }
+    ],
+    "description": "Spiffy\\View (Twig) is a twig compatability layer built on Spiffy\\View.",
+    "require": {
+        "php": ">=5.4",
+        "spiffy/spiffy-view": "~1.0-dev",
+        "twig/twig": "~1.15"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spiffy\\View\\Twig\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "1.0-dev"
+        }
+    }
+}
