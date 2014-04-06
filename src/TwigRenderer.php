@@ -16,10 +16,12 @@ class TwigRenderer implements Renderer
 
     /**
      * @param \Twig_Environment $twig
+     * @param TwigResolver $resolver
      */
-    public function __construct(\Twig_Environment $twig)
+    public function __construct(\Twig_Environment $twig, TwigResolver $resolver)
     {
         $this->twig = $twig;
+        $this->resolver = $resolver;
     }
 
     /**
@@ -28,14 +30,6 @@ class TwigRenderer implements Renderer
     public function getEngine()
     {
         return $this->twig;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setResolver(Resolver $resolver)
-    {
-        $this->resolver = $resolver;
     }
 
     /**
@@ -50,8 +44,10 @@ class TwigRenderer implements Renderer
 
             $nameOrModel = $model;
         }
-        $template = $this->resolver->resolve($nameOrModel);
 
-        return $template->render($nameOrModel->getVariables());
+        return $this
+            ->resolver
+            ->resolve($nameOrModel)
+            ->render($nameOrModel->getVariables());
     }
 }
