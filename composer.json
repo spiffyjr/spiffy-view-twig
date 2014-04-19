@@ -13,12 +13,13 @@
         "twig/twig": "~1.15"
     },
     "require-dev": {
+        "spiffy/spiffy-inject": "~1.0-dev",
         "phpunit/phpunit": "~4.0",
         "squizlabs/php_codesniffer": "~1.0"
     },
     "autoload": {
         "psr-4": {
-            "Spiffy\\View\\": "src/"
+            "Spiffy\\View\\": ["src/", "test/"]
         }
     },
     "extra": {
