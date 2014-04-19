@@ -1,8 +1,8 @@
 # Spiffy\View (Twig)
 
-[![Build Status](https://travis-ci.org/spiffyjr/spiffy-view-twig.svg)](https://travis-ci.org/spiffyjr/spiffy-view-twig)
-[![Code Coverage](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/badges/coverage.png?s=027fff13d1f4d7941e1a1a8c09d042be39c1c51e)](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/badges/quality-score.png?s=e1cd4cb8d2ee91cad855bad56d3f2432fa46b688)](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/)
+[![Build Status](https://travis-ci.org/spiffyjr/spiffy-view-twig.svg?branch=develop)](https://travis-ci.org/spiffyjr/spiffy-view-twig)
+[![Code Coverage](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/badges/coverage.png?s=5d40de19125e65e0dec3654f614c680b21c15026)](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/badges/quality-score.png?s=1e3ac2ba7e5a1ab697fe48ca7650e02c96c46a33)](https://scrutinizer-ci.com/g/spiffyjr/spiffy-view-twig/)
 
 ## Installation
 Spiffy\View (Twig) can be installed using composer which will setup any autoloading for you.
