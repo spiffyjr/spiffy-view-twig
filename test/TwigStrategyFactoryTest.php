@@ -5,7 +5,7 @@ namespace Spiffy\View\Twig;
 use Spiffy\Inject\Injector;
 
 /**
- * @coversDefaultClass \Spiffy\View\TwigStrategyFactory
+ * @coversDefaultClass \Spiffy\View\Twig\TwigStrategyFactory
  */
 class TwigStrategyFactoryTest extends \PHPUnit_Framework_TestCase
 {

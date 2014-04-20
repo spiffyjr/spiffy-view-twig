@@ -4,7 +4,7 @@ namespace Spiffy\View\Twig;
 use Spiffy\View\ViewModel;
 
 /**
- * @coversDefaultClass \Spiffy\View\TwigResolver
+ * @coversDefaultClass \Spiffy\View\Twig\TwigResolver
  */
 class TwigResolverTest extends \PHPUnit_Framework_TestCase
 {

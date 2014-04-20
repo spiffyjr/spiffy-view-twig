@@ -5,7 +5,7 @@ namespace Spiffy\View\Twig;
 use Spiffy\View\Twig\TestAsset\ExceptionLoader;
 
 /**
- * @coversDefaultClass \Spiffy\View\TwigStrategy
+ * @coversDefaultClass \Spiffy\View\Twig\TwigStrategy
  */
 class TwigStrategyTest extends \PHPUnit_Framework_TestCase
 {

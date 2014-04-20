@@ -6,7 +6,7 @@ use Spiffy\View\Twig\TestAsset\TestTwigExtension;
 use Spiffy\View\Twig\TwigEnvironmentFactory;
 
 /**
- * @coversDefaultClass \Spiffy\View\TwigEnvironmentFactory
+ * @coversDefaultClass \Spiffy\View\Twig\TwigEnvironmentFactory
  */
 class TwigEnvironmentFactoryTest extends \PHPUnit_Framework_TestCase
 {
