@@ -1,7 +1,9 @@
 <?php
 
-namespace Spiffy\View;
+namespace Spiffy\View\Twig;
 
+use Spiffy\View\Model;
+use Spiffy\View\Resolver;
 use Twig_Environment;
 
 class TwigResolver implements Resolver

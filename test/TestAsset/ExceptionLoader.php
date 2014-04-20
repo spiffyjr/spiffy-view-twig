@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiffy\View\TestAsset;
+namespace Spiffy\View\Twig\TestAsset;
 
 use Twig_Error_Loader;
 

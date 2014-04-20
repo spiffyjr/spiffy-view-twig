@@ -1,8 +1,8 @@
 <?php
 
-namespace Spiffy\View;
+namespace Spiffy\View\Twig;
 
-use Spiffy\View\TestAsset\ExceptionLoader;
+use Spiffy\View\Twig\TestAsset\ExceptionLoader;
 
 /**
  * @coversDefaultClass \Spiffy\View\TwigStrategy

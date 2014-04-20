@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiffy\View;
+namespace Spiffy\View\Twig;
 
 use Spiffy\Inject\Injector;
 
@@ -17,6 +17,6 @@ class TwigStrategyFactoryTest extends \PHPUnit_Framework_TestCase
         $factory = new TwigStrategyFactory();
         $result = $factory->createService(new \Twig_Environment());
 
-        $this->assertInstanceOf('Spiffy\View\TwigStrategy', $result);
+        $this->assertInstanceOf('Spiffy\View\Twig\TwigStrategy', $result);
     }
 }

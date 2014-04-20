@@ -1,6 +1,7 @@
 <?php
 
-namespace Spiffy\View;
+namespace Spiffy\View\Twig;
+use Spiffy\View\ViewModel;
 
 /**
  * @coversDefaultClass \Spiffy\View\TwigRenderer

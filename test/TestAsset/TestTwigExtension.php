@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiffy\View\TestAsset;
+namespace Spiffy\View\Twig\TestAsset;
 
 class TestTwigExtension extends \Twig_Extension
 {

@@ -1,6 +1,9 @@
 <?php
 
-namespace Spiffy\View;
+namespace Spiffy\View\Twig;
+
+use Spiffy\View\Renderer;
+use Spiffy\View\ViewModel;
 
 class TwigRenderer implements Renderer
 {

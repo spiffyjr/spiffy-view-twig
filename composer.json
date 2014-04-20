@@ -6,7 +6,7 @@
             "email": "theman@spiffyjr.me"
         }
     ],
-    "description": "Spiffy\\View (Twig) is a twig compatability layer built on Spiffy\\View.",
+    "description": "Spiffy\\View\\Twig is a twig compatability layer built on Spiffy\\View.",
     "require": {
         "php": ">=5.4",
         "spiffy/spiffy-view": "~1.0-dev",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Spiffy\\View\\": ["src/", "test/"]
+            "Spiffy\\View\\Twig\\": ["src/", "test/"]
         }
     },
     "extra": {

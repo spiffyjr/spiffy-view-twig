@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiffy\View;
+namespace Spiffy\View\Twig;
 
 class TwigStrategyFactory
 {

@@ -1,8 +1,9 @@
 <?php
 
-namespace Spiffy\View;
+namespace Spiffy\Twig\View;
 
-use Spiffy\View\TestAsset\TestTwigExtension;
+use Spiffy\View\Twig\TestAsset\TestTwigExtension;
+use Spiffy\View\Twig\TwigEnvironmentFactory;
 
 /**
  * @coversDefaultClass \Spiffy\View\TwigEnvironmentFactory
