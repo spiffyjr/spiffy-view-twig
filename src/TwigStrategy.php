@@ -2,27 +2,25 @@
 
 namespace Spiffy\View\Twig;
 
-use Spiffy\View\Renderer;
-use Spiffy\View\Resolver;
-use Spiffy\View\Strategy;
+use Spiffy\View;
 
-class TwigStrategy implements Strategy
+class TwigStrategy implements View\ViewStrategy
 {
     /**
-     * @var Renderer
+     * @var \Spiffy\View\ViewRenderer
      */
     protected $renderer;
 
     /**
-     * @var Resolver
+     * @var \Spiffy\View\ViewResolver
      */
     protected $resolver;
 
     /**
-     * @param Renderer $renderer
-     * @param Resolver $resolver
+     * @param \Spiffy\View\Twig\TwigRenderer $renderer
+     * @param \Spiffy\View\Twig\TwigResolver $resolver
      */
-    public function __construct(Renderer $renderer, Resolver $resolver)
+    public function __construct(TwigRenderer $renderer, TwigResolver $resolver)
     {
         $this->renderer = $renderer;
         $this->resolver = $resolver;

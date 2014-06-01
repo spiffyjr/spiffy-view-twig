@@ -2,11 +2,10 @@
 
 namespace Spiffy\View\Twig;
 
-use Spiffy\View\Model;
-use Spiffy\View\Resolver;
+use Spiffy\View;
 use Twig_Environment;
 
-class TwigResolver implements Resolver
+class TwigResolver implements View\ViewResolver
 {
     /**
      * @var Twig_Environment
@@ -33,7 +32,7 @@ class TwigResolver implements Resolver
      */
     public function resolve($nameOrModel)
     {
-        if ($nameOrModel instanceof Model) {
+        if ($nameOrModel instanceof View\ViewModel) {
             $nameOrModel = $nameOrModel->getTemplate();
         }
         return $this->twig->loadTemplate($nameOrModel . $this->suffix);

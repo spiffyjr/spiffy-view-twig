@@ -2,10 +2,9 @@
 
 namespace Spiffy\View\Twig;
 
-use Spiffy\View\Renderer;
-use Spiffy\View\ViewModel;
+use Spiffy\View;
 
-class TwigRenderer implements Renderer
+class TwigRenderer implements View\ViewRenderer
 {
     /**
      * @var TwigResolver
@@ -40,8 +39,8 @@ class TwigRenderer implements Renderer
      */
     public function render($nameOrModel, array $variables = [])
     {
-        if (!$nameOrModel instanceof ViewModel) {
-            $model = new ViewModel();
+        if (!$nameOrModel instanceof View\ViewModel) {
+            $model = new View\ViewModel();
             $model->setVariables($variables);
             $model->setTemplate($nameOrModel);
 
