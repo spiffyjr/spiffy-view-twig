@@ -39,6 +39,10 @@ class TwigStrategy implements View\ViewStrategy
      */
     public function canRender($nameOrModel)
     {
+        if (!$nameOrModel instanceof View\ViewModel) {
+            return false;
+        }
+
         try {
             $this->resolver->resolve($nameOrModel);
         } catch (\Twig_Error_Loader $e) {

@@ -32,7 +32,7 @@ class TwigResolver implements View\ViewResolver
      */
     public function resolve($nameOrModel)
     {
-        if ($nameOrModel instanceof View\ViewModel) {
+        if ($nameOrModel instanceof View\Model) {
             $nameOrModel = $nameOrModel->getTemplate();
         }
         return $this->twig->loadTemplate($nameOrModel . $this->suffix);
