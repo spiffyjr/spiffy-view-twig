@@ -3,6 +3,7 @@
 namespace Spiffy\View\Twig;
 
 use Spiffy\View\Twig\TestAsset\ExceptionLoader;
+use Spiffy\View\ViewModel;
 
 /**
  * @coversDefaultClass \Spiffy\View\Twig\TwigStrategy
@@ -24,15 +25,29 @@ class TwigStrategyTest extends \PHPUnit_Framework_TestCase
      */
     public function testRenderProxiesToRenderer()
     {
-        $this->assertSame($this->r->render('test'), $this->s->render('test'));
+        $this->assertSame($this->r->render('simple'), $this->s->render('simple'));
     }
 
     /**
      * @covers ::canRender
      */
-    public function testCanRenderAlwaysReturnsTrue()
+    public function testRenderReturnsFalseForNonModelValues()
     {
-        $this->assertTrue($this->s->canRender('a'));
+        $this->assertFalse($this->s->canRender('a'));
+    }
+
+    /**
+     * @covers ::canRender
+     */
+    public function testCanRender()
+    {
+        $s = $this->s;
+        $model = new ViewModel();
+
+        $this->assertFalse($s->canRender($model));
+
+        $model->setTemplate('simple');
+        $this->assertTrue($s->canRender($model));
     }
 
     /**
@@ -51,7 +66,7 @@ class TwigStrategyTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $twig = new \Twig_Environment(new \Twig_Loader_String());
+        $twig = new \Twig_Environment(new \Twig_Loader_Filesystem(__DIR__ . '/view'));
         $resolver = new TwigResolver($twig);
 
         $this->r = $r = new TwigRenderer($twig, $resolver);
