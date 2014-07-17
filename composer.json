@@ -10,11 +10,11 @@
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.4",
-        "spiffy/spiffy-view": "~1.0-dev",
-        "twig/twig": "~1.15"
+        "spiffy/spiffy-view": "~1.0-alpha",
+        "twig/twig": "~1.16"
     },
     "require-dev": {
-        "spiffy/spiffy-inject": "~1.0-dev",
+        "spiffy/spiffy-inject": "~1.0-alpha",
         "phpunit/phpunit": "~4.0",
         "squizlabs/php_codesniffer": "~1.0"
     },
